@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Tipo de Letra -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Página de Viajes con Card</title>
+    <style>
+      body {
+        overflow-x: hidden; /* Evita el scroll horizontal */
+      }
+      .card-img-top {
+        object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
+        height: 200px; /* Ajusta la altura según sea necesario */
+        width: 100%; /* Asegura que la imagen no exceda el contenedor */
+      }
+      .container {
+        max-width: 1200px; /* Ajusta el ancho máximo si es necesario */
+      }
+    </style>
+</head>
+<body>
+  <!-- Navbar Celeste -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+          <a class="navbar-brand ms-5" href="#">SKIP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Planifica tu Viaje</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Administra tu Vuelo</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Check-in</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Centro de Ayuda</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <!-- Fin del Nav -->
+
+  <!-- Sección con margen superior -->
+  <section class="row mt-4">
+      <div class="col-12">
+          <h1 class="ms-5 fs-2" style="font-family: 'Roboto', sans-serif;">Viaja con precios ultra rebajados a los mejores destinos</h1>
+      </div>
+  </section>
+  <!-- Fin de Sección de Título -->
+
+  <!-- Card de Fotos -->
+  <div class="container mt-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100 overflow-hidden">
+          <img src="assets/img/Buenos-aires.webp" class="card-img-top img-fluid" alt="Buenos Aires">
+          <div class="card-body">
+            <h5 class="card-title">Buenos Aires</h5>
+            <p class="card-text">Buenos Aires, la capital de Argentina, es conocida por su vibrante vida cultural y su rica historia. La ciudad combina la arquitectura europea con la modernidad de una metrópoli sudamericana.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Ver más</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 overflow-hidden">
+          <img src="assets/img/machu-pichu.webp" class="card-img-top img-fluid" alt="Machu Picchu">
+          <div class="card-body">
+            <h5 class="card-title">Machu Picchu</h5>
+            <p class="card-text">Machu Picchu es una antigua ciudadela inca ubicada en la región montañosa de los Andes en Perú. Descubierta para el mundo en 1911 por el explorador Hiram Bingham, Machu Picchu es una de las maravillas arqueológicas más icónicas del mundo.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Ver más</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 overflow-hidden">
+          <img src="assets/img/Rio-de-janeiro.webp" class="card-img-top img-fluid" alt="Rio de Janeiro">
+          <div class="card-body">
+            <h5 class="card-title">Río de Janeiro</h5>
+            <p class="card-text">Río de Janeiro es una de las ciudades más famosas de Brasil, conocida por su impresionante paisaje natural y su vibrante cultura. La ciudad está rodeada por montañas y playas, incluyendo la famosa Playa de Copacabana y el Pan de Azúcar.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Ver más</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Card de Fotos -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
